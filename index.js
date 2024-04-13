@@ -7,9 +7,13 @@ const app = express();
 dotenv.config();
 
 // replace the value below with the Telegram token you receive from @BotFather
-const TOKEN = process.env.TOKEN;
-const WEB_APP_URL = process.env.WEB_APP_URL;
-const PORT = process.env.PORT;
+// const TOKEN = process.env.TOKEN;
+// const WEB_APP_URL = process.env.WEB_APP_URL;
+// const PORT = process.env.PORT;
+
+const TOKEN = "6834372597:AAGEas20KSOkdbFfT3fQS1OAzSRxEDWFUns";
+const WEB_APP_URL = "https://cute-chaja-ecdbf7.netlify.app";
+const PORT = 8000;
 
 // Create a bot that uses 'polling' to fetch new updates
 const bot = new TelegramBot(TOKEN, { polling: true });
